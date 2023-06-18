@@ -1,0 +1,252 @@
+.shadowBtn{
+  padding: 5px 25px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: -0.30rem +0.30rem #748CAB;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cardBtn{
+  margin-top: 20px;
+}
+
+.cpcontactBtn {
+  padding: 15px 20px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  z-index: 1;
+}
+  
+.cpcontactBtn::after,
+.cpcontactBtn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+  
+.cpcontactBtn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+  
+.cpcontactBtn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+  
+.cpcontactBtn:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+  
+.cpcontactBtn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+  
+.cpcontactBtn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+
+
+  /* Card Delete Button */
+.carddeleteBtn {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+  margin: 5px ;
+}
+  
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+  
+.svgIcon path {
+  fill: white;
+}
+
+.editsvgIcon{
+  width: 20px;
+}
+  
+.carddeleteBtn:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+.cardeditBtn:hover{
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #28282d;
+  align-items: center;
+}
+  
+.carddeleteBtn:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+  
+.carddeleteBtn::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+.cardeditBtn::before{
+  position: absolute;
+  top: -20px;
+  content: "Edit";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+  
+.carddeleteBtn:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+
+  /* AP BUTTON */
+
+.APBtn {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: white;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: normal;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  cursor: pointer;
+} 
+  
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+  
+.APBtn:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+  
+.APBtn:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+
+/* Bookmark button  */
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid lightgray;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  margin: 0;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+.IconContainer path{
+  fill: white;
+}
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 1;
+  transition-duration: .3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}

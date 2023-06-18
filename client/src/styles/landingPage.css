@@ -1,0 +1,214 @@
+
+.lpBg{
+    position: absolute;
+    width: 100%;
+    height: 857px;
+    left: 0px;
+    top: 1px;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1008) 0%, rgba(121, 199, 255, 0.252) 98.58%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.lpleft{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* position: absolute;
+    width: 415px;
+    height: 374px;
+    left: 70px;
+    top: 339px; */
+}
+.lphead{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 68px;
+    padding-bottom: 10px;
+    color: #003566;
+}
+
+.introText{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #6C757D;
+}
+
+.lpExploreBtn{
+    margin-top: 40px;
+    height: 50px;
+    width: 150px;
+    background: #003566;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+
+}
+.lpmid{
+    margin-top: 90vh;
+    width: 100%;
+
+}
+.lptext{
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 57px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+
+/* CARD */
+.lpcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.lpcardRect{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0px 50px;
+    padding: 0px 20px;
+
+}
+.lpcardElipse img{
+    height: 50px;
+    width: 50px;
+}
+.lpcardElipse{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    top: -20px;
+    left: 40%;    
+}
+
+.lpcardhead{
+    color: #ED7D2B;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.lpcardinfo{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+.lpcardside{
+    margin-top: 100px;
+}
+
+
+/* footer  */
+.lpfooter{
+    background-color: #0D1321;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.getintouch .getintouchtext{
+    color: white;
+    font-size: 18px;
+}
+.getintouch {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.getintouch form{
+    width: fit-content;
+}
+
+.footerinput{
+    /* border: none; */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 180px;
+}
+form .footerinput:focus{
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.lpfooterright{
+    display: flex;
+    align-items: start;
+}
+
+.footerContent{
+    color: white;
+    width: fit-content;
+    padding: 0 40px;
+
+}
+.footerheadtext{
+    color: #6C757D;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.footerheadtext:hover{
+    color: white;
+}
+.footercentercontent{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.lpfooterrightsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.socialIcons{
+    margin-top: 50px;
+}
+
+.socialIcons img{
+    height: 24px;
+    padding: 0 10px;
+    cursor: pointer;
+}

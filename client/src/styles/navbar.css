@@ -1,0 +1,57 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    height: 10vh;
+}
+
+.navlinks ul{
+    display: flex;
+    list-style: none;
+}
+
+.navlinks ul li{
+    padding: 0px 40px;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: #6C757D;
+    font-size: 18px;
+    transition: 0.3s;
+}
+/* .navlinks ul li a::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+} */
+.navlinks ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.signInbtn{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color: #6C757D;
+    margin: 0;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.signInbtn:hover{
+    color: black;
+}
+.loginbtn{
+    margin: 0;
+}
+
+.AvatarCircle img{
+    height: 30px;
+    padding-right: 5px;
+}

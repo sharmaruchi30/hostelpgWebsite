@@ -1,0 +1,82 @@
+.cparea{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    align-items: center;
+    overflow: scroll;
+    height: 90%;
+}
+.cpright img{
+    height: 600px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+.typehead{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.cpAddress{
+    text-transform: capitalize;
+    color: #555;
+    font-size: 18px;
+}
+.cpprice{
+    display: flex;
+    align-items: end;
+    padding-top: 10px ;
+    padding-bottom: 5px;
+}
+.cpprice .amount{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cpprice .pm{
+    color: #555;
+}
+
+.desc{
+    padding-top: 20px;
+    width: 700px;
+}
+.deschead{
+    font-size: 24px;
+}
+.cpcontactBtn img{
+    filter: brightness(0) invert(1);
+}
+
+.roomInfo{
+    padding: 40px 0px ;
+    display: flex;
+}
+
+.cproom{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+
+.cproom img{
+    height: 28px;
+    width: 28px;
+}
+.foodOptions label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+
+.listItem{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    color: #555;
+    padding-top: 10px;
+}
+
+.listItem img{
+    padding-right: 5px;
+    height: 18px;
+}

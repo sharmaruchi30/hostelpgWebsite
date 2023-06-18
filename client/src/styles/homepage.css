@@ -1,0 +1,146 @@
+:root{
+    --gray:#ADB5BD;
+    --blue:#003566;
+}
+
+.hpmain{
+    height: 89.5vh;
+    display: flex;
+    width: 99.9%;
+}
+
+.hpleft{
+    width: 5%;
+    height: 100%;
+    border: 1.5px solid var(--gray);
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hpright{
+    height: 100%;
+    width: 100%;
+}
+
+.filterhandles{
+    height: 10%;
+    width: 100%;
+    border: 1.5px solid var(--gray);
+    border-left: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.searchResults{
+    
+    height: 90%;
+    /* width: 100; */
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #003566; */
+
+}
+.searchResultInnerDiv{
+    height: 90%;
+    /* width: 100; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    max-width:90% ;
+}
+.topIcons{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.search{
+    display: flex;
+}
+.hpsearch{
+    border: 1px solid var(--gray);
+    height: 40px;
+    font-size: 16px;
+    padding: 0 5px;
+    margin: 0;
+    width: 300px;
+}
+
+.hpsearch:focus{
+    border: 1px solid #748CAB;
+}
+
+.bottomIcon{
+    padding-bottom: 10px;
+}
+.headText{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.searchbtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 0px;
+    border: 1px solid var(--blue);
+    border-left: none;
+    background-color: var(--blue);
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+.searchbtn img{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.searchbtn:hover img{
+    transform: scale(1.2);
+}
+.leftFilters{
+    display: flex;
+}
+.hpDropDowns{
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 0 5px;
+    border: 1px solid var(--gray);
+    width: 150px;
+}
+/* .hpsearch {
+    max-width: 190px;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+.hpsearch:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+.hpsearch:hover {
+    outline: 1px solid lightgrey;
+  } */

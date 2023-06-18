@@ -1,0 +1,54 @@
+.APinput{
+    margin: 10px 0px;
+}
+
+form{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.formGroup{
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputWithText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.locationInput .APinput{
+    width: 20%;
+}
+
+
+.chkBoxArea{
+    width: 400px;
+    
+}
+
+.drpDown{
+    height: 45px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1.5px solid lightgray;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.APinput[type=file]::file-selector-button{
+    background-color: white;
+    border: 1.5px solid lightgray;
+    padding: 5px;
+    border-radius: 12px;
+}
