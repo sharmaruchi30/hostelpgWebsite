@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import DonePage from "./pages/DonePage";
 import CardViewPage from "./pages/CardViewPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/signup" element={<SignUp />} />
       <Route path="/homepage" element={ <HomePage /> } />
       <Route path="/AboutPage" element={ <AboutPage /> } />
+      <Route path="/ContactPage" element={ <ContactPage /> } />
       <Route path="/regSuccessfull" element= {<DonePage />} /> 
       <Route path="/houseView" element= {<CardViewPage />} /> 
     </Routes>

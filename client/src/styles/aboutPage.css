@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+.apBg{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1008) 0%, rgba(121, 199, 255, 0.252) 98.58%);
 }
 
