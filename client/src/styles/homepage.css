@@ -91,6 +91,7 @@
 .headText{
     font-size: 22px;
     font-weight: 500;
+    /* animation: fadeIn 0.1s 0.4s backwards; */
 }
 
 .searchbtn{

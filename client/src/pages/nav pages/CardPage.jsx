@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/cardPage.css";
 import room from "../../assets/icons/room.png";
 import bath from "../../assets/icons/bath.png";
 import arrow from "../../assets/icons/arrowright.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const CardPage = ({ houseInfo }) => {
+  const [slideImages, setSlideImages] = useState(houseInfo.image_path[0]);
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const imageLeft = () => {
+    if (slideIndex === 0) {
+      let last = houseInfo.image_path.length - 1;
+      setSlideIndex(last);
+      setSlideImages(houseInfo.image_path[slideIndex]);
+    } else {
+      setSlideIndex(slideIndex - 1);
+      setSlideImages(houseInfo.image_path[slideIndex]);
+    }
+  };
+
+  const imageRight = () => {
+    if (slideIndex === houseInfo.image_path.length - 1) {
+      setSlideIndex(0);
+      setSlideImages(houseInfo.image_path[slideIndex]);
+    } else {
+      setSlideIndex(slideIndex + 1);
+      setSlideImages(houseInfo.image_path[slideIndex]);
+    }
+  };
   return (
     <>
       <div className="filterhandles">
@@ -13,10 +38,22 @@ const CardPage = ({ houseInfo }) => {
       </div>
 
       <div className="cparea">
-        <div className="cpright">
-          <img src={houseInfo.image_path[0]} alt="" />
+        <div
+          className="cpright animate__animated animate__fadeIn"
+          style={{
+            backgroundImage: `url(${slideImages})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <button className=" arrow leftarrow" onClick={() => imageLeft()}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
+
+          <button className=" arrow leftarrow" onClick={() => imageRight()}>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </button>
         </div>
-        <div className="cpleft">
+        <div className="cpleft animate__animated animate__fadeInRight">
           <div className="typehead">Paying Guest</div>
           <div className="cpAddress">
             {houseInfo.location.area}, {houseInfo.location.city},{" "}

@@ -1,0 +1,7 @@
+
+
+# modules folder
+node_modules/
+
+# eslint cache
+.eslintcache

@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import "../styles/login.css";
 import "../styles/inputField/inputField1.css";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo2.svg";
 import { Formik } from "formik";
 import * as yup from "yup";
 import { useNavigate, Link } from "react-router-dom";
@@ -84,24 +84,6 @@ function LogIn() {
       console.log(e);
       Notify("server error. Please try again later.");
     }
-
-    // axios
-    //   .post("http://localhost:3001/auth/login", values)
-    //   .then((res) => {
-    //     onSubmitProps.resetForm();
-    //     dispatch(
-    //       setLogin({
-    //         token: res.data.token,
-    //         user: res.data.user,
-    //       })
-    //     );
-    //     navigate("/homepage");
-    //   })
-    //   .catch((err) => {
-    //     notify("wrong Email or password.");
-
-    //     console.log(err);
-    //   });
   };
 
   return (

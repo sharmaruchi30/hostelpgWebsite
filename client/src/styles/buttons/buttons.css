@@ -1,3 +1,6 @@
+
+
+
 .shadowBtn{
   padding: 5px 25px;
   background-color: white;
@@ -162,6 +165,26 @@
   background: var(--button_outline_color);
   cursor: pointer;
 } 
+
+button:disabled,
+button[disabled] .button_top{
+
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  transform: translateY(-0.2em);
+}
+button:disabled,
+button[disabled] .button_top:hover{
+
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  transform: translateY(-0.2em);
+  cursor: not-allowed;
+}
+
+
   
 .button_top {
   display: block;

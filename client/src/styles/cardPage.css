@@ -1,10 +1,32 @@
 .cparea{
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 50px 50px;
     align-items: center;
     overflow: scroll;
     height: 90%;
+}
+
+.cpright{
+    height: 600px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.arrow{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.arrow svg{
+    height: 30px;
+    color: white;
 }
 .cpright img{
     height: 600px;
@@ -80,3 +102,4 @@
     padding-right: 5px;
     height: 18px;
 }
+

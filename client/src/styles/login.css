@@ -57,6 +57,7 @@
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 60px;
+    animation: fadeIn 0.9s 0.5s backwards;
 }
 
 form{

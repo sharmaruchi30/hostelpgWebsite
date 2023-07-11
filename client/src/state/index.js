@@ -21,10 +21,19 @@ export const authSlice = createSlice({
         },
         setHouseLists: (state, action) =>{
             state.houses = action.payload.houses;
+        },
+        setUserBookmarks: (state, action) => {
+            if (state.user!== ""){
+                state.user.bookmarks = action.payload.bookmarks;
+            }
+            else{
+                console.error("error user not initialized")
+            }
+            
         }
     }
 })
 
 
-export const {setLogin, setLogout, setHouseLists} = authSlice.actions;
+export const {setLogin, setLogout, setHouseLists , setUserBookmarks} = authSlice.actions;
 export default authSlice.reducer;

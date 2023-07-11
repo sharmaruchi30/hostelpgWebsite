@@ -1,6 +1,6 @@
 import "../styles/signup.css";
 import "../styles/inputField/inputField1.css";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo2.svg";
 import { Formik } from "formik";
 import * as yup from "yup";
 import { useNavigate, Link } from "react-router-dom";

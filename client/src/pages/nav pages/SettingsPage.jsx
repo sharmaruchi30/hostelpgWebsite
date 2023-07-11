@@ -4,6 +4,7 @@ import search from "../../assets/icons/search.svg";
 import { useSelector } from "react-redux";
 const SettingsPage = () => {
   const [houseData, setHouseData] = useState([]);
+  const user = useSelector((state) => state.user);
   const userId = useSelector((state) => state.user._id);
   const url = `http://localhost:3001/house/${userId}/`;
   useEffect(() => {
@@ -22,10 +23,18 @@ const SettingsPage = () => {
   }, []);
   return (
     <>
+      {!user ? (
+        <div className="login-to-use">
+          <div className="">Please Login to Use this</div>
+          <button className="shadowBtn"> Log In</button>
+        </div>
+      ) : null}
       <div className="filterhandles">
         <form action="">
           <div className="search">
-            <div className="headText">Your Advertisements</div>
+            <div className="headText animate__animated animate__fadeInRight">
+              Your Advertisements
+            </div>
           </div>
         </form>
       </div>

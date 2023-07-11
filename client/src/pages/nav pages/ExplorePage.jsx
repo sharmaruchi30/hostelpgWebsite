@@ -1,7 +1,9 @@
 import { React, useEffect, useState } from "react";
 import Card from "../../components/Card";
 import search from "../../assets/icons/search.svg";
+import { useSelector } from "react-redux";
 const ExplorePage = () => {
+  const bookmarks = useSelector((state) => state.user.bookmarks);
   const [houseData, setHouseData] = useState([]);
   const [searchLoc, setSearchLoc] = useState("");
   const [priceRange, setPriceRange] = useState("");
@@ -77,14 +79,7 @@ const ExplorePage = () => {
             <option value="">Jain</option>
           </select>
         </div>
-        <div className="rightFilters">
-          <div class="hpdrpDown">
-            <span>Mouse over me</span>
-            <div class="dropdown-content">
-              <p>Hello World!</p>
-            </div>
-          </div>
-        </div>
+        <div className="rightFilters"></div>
       </div>
       <div className="searchResults">
         <div className="searchResultInnerDiv">
@@ -95,6 +90,7 @@ const ExplorePage = () => {
                     houseInfo={house}
                     // location={house.location.area}
                     // image={house.image_path[0]}
+                    bookmarks={bookmarks}
                   />
                 ) : null
               )

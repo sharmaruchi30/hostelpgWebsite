@@ -5,10 +5,13 @@ import bg from "../assets/landingpage/bg.png";
 import uploadIC from "../assets/landingpage/icons/upload.svg";
 import exploreIC from "../assets/landingpage/icons/explore.png";
 import enquireIC from "../assets/landingpage/icons/contact.svg";
-import twitter from "../assets/landingpage/icons/twitter.svg";
-import instagram from "../assets/landingpage/icons/instagram.svg";
-import linkedIn from "../assets/landingpage/icons/linkedin.svg";
-import github from "../assets/landingpage/icons/github.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 export const LpCard = ({ sideClass, icon, headText, infoText }) => {
   return (
     <div className={"lpcardRect " + sideClass}>
@@ -37,17 +40,19 @@ function LandingPage() {
     <>
       <Navbar />
       <div className="lpBg">
-        <div className="lpleft">
-          <div className="lphead">Find a Home Away from Home</div>
-          <div className="introText">
-            Enables individuals to find hostels or PGs that meet their
-            preferences and requirements, ensuring a comfortable and suitable
-            living environment.
+        <div className="lpheroSection">
+          <div className="lpleft">
+            <div className="lphead">Find a Home Away from Home</div>
+            <div className="introText">
+              Enables individuals to find hostels or PGs that meet their
+              preferences and requirements, ensuring a comfortable and suitable
+              living environment.
+            </div>
+            <div className="lpExploreBtn">Explore Now</div>
           </div>
-          <div className="lpExploreBtn">Explore Now</div>
-        </div>
-        <div className="lpright">
-          <img src={bg} alt="" />
+          <div className="lpright">
+            <img src={bg} alt="" />
+          </div>
         </div>
       </div>
 
@@ -121,10 +126,18 @@ function LandingPage() {
                 />
               </div>
               <div className="socialIcons">
-                <img src={twitter} alt="" />
-                <img src={instagram} alt="" />
-                <img src={linkedIn} alt="" />
-                <img src={github} alt="" />
+                <a href="" className="twitter">
+                  <FontAwesomeIcon icon={faTwitter} color="#FFF" />
+                </a>
+                <a href="" className="linkedin">
+                  <FontAwesomeIcon icon={faLinkedin} color="#FFF" />
+                </a>
+                <a href="" className="github">
+                  <FontAwesomeIcon icon={faGithub} color="#FFF" />
+                </a>
+                <a href="" className="instagram">
+                  <FontAwesomeIcon icon={faInstagram} color="#FFF" />
+                </a>
               </div>
             </div>
           </div>
