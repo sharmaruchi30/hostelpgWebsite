@@ -1,5 +1,5 @@
 import express from "express";
-import { addHouse ,getListedHouse,getAllBookmarks , getAllHouse , updateHouse ,deleteHouse, bookmarkHouse } from "../controllers/House.js";
+import { addHouse ,getListedHouse,getAllBookmarks , getAllHouse , updateHouse , deleteHouse, bookmarkHouse } from "../controllers/House.js";
 
 const router = express.Router();
 router.get("/" , getAllHouse);  // Get each and every listed houses

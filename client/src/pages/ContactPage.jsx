@@ -13,6 +13,7 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import Lpfooter from "../components/Lpfooter";
 function ContactPage() {
   return (
     <>
@@ -57,7 +58,6 @@ function ContactPage() {
                 ></textarea>
               </div>
               <button className="sendBtn" type="submit">
-                {" "}
                 Send
               </button>
             </form>
@@ -78,22 +78,30 @@ function ContactPage() {
             </div>
 
             <div className="c-socialIcons">
-              <a href="" className="twitter">
+              <a
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2F"
+                className="twitter"
+              >
                 <FontAwesomeIcon icon={faTwitter} color="#FFF" />
               </a>
-              <a href="" className="linkedin">
+              <a href="https://www.linkedin.com/" className="linkedin">
                 <FontAwesomeIcon icon={faLinkedin} color="#FFF" />
               </a>
-              <a href="" className="github">
+              <a
+                href="https://github.com/sharmaruchi30/hostelpgWebsite"
+                className="github"
+              >
                 <FontAwesomeIcon icon={faGithub} color="#FFF" />
               </a>
-              <a href="" className="instagram">
+              <a href="https://www.instagram.com/" className="instagram">
                 <FontAwesomeIcon icon={faInstagram} color="#FFF" />
               </a>
             </div>
           </div>
         </div>
       </section>
+      <div className="emptySpace"></div>
+      <Lpfooter />
     </>
   );
 }

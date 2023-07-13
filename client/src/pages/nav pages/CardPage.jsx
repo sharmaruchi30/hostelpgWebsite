@@ -82,14 +82,12 @@ const CardPage = ({ houseInfo }) => {
           <div className="foodOptions">
             <label htmlFor="foodOptions"> Food Options </label>
             <div className="optionsList">
-              <div className="listItem">
-                <img src={arrow} alt="" />
-                <span>Veg</span>
-              </div>
-              <div className="listItem">
-                <img src={arrow} alt="" />
-                <span>Non-Veg</span>
-              </div>
+              {houseInfo.food_categories.map((food, index) => (
+                <div className="listItem">
+                  <img src={arrow} alt="" />
+                  <span>{food}</span>
+                </div>
+              ))}
             </div>
           </div>
 

@@ -5,32 +5,16 @@ import bg from "../assets/landingpage/bg.png";
 import uploadIC from "../assets/landingpage/icons/upload.svg";
 import exploreIC from "../assets/landingpage/icons/explore.png";
 import enquireIC from "../assets/landingpage/icons/contact.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import Lpfooter from "../components/Lpfooter";
+
 export const LpCard = ({ sideClass, icon, headText, infoText }) => {
   return (
-    <div className={"lpcardRect " + sideClass}>
+    <div className={`lpcardRect ${sideClass}`}>
       <div className="lpcardElipse">
         <img src={icon} alt="" />
       </div>
       <div className="lpcardhead">{headText}</div>
       <div className="lpcardinfo">{infoText}</div>
-    </div>
-  );
-};
-
-export const LpFooterContent = ({ heading, content }) => {
-  return (
-    <div className="footerContent">
-      <div className="lpfooterhead">{heading}</div>
-      {content.map((c, index) => (
-        <div className="footerheadtext">{c}</div>
-      ))}
     </div>
   );
 };
@@ -83,65 +67,8 @@ function LandingPage() {
             }
           />
         </div>
-        <div className="lpfooter">
-          <div className="footercentercontent">
-            <div className="getintouch">
-              <div className="getintouchtext">Get in touch</div>
-              <form action="">
-                <input type="text" className="footerinput" placeholder="Name" />
-                <input
-                  type="text"
-                  className="footerinput"
-                  placeholder="Email"
-                />
-                <input
-                  type="text"
-                  className="footerinput"
-                  placeholder="Subject"
-                />
-                <textarea
-                  type="text"
-                  className="footerinput"
-                  placeholder="Message"
-                />
-              </form>
-            </div>
-            <div className="lpfooterrightsection">
-              <div className="lpfooterright">
-                <LpFooterContent
-                  heading={"Popular"}
-                  content={["Pune", "Bangalore", "Mumbai", "Kolkata"]}
-                />
-                <LpFooterContent
-                  heading={"Resources"}
-                  content={["Blog", "Events", "Help Centre"]}
-                />
-                <LpFooterContent
-                  heading={"About Us"}
-                  content={["Features", "Careers", "News", "Contact"]}
-                />
-                <LpFooterContent
-                  heading={"StayBuddy"}
-                  content={["Overview", "Solutions", "Team", "Terms"]}
-                />
-              </div>
-              <div className="socialIcons">
-                <a href="" className="twitter">
-                  <FontAwesomeIcon icon={faTwitter} color="#FFF" />
-                </a>
-                <a href="" className="linkedin">
-                  <FontAwesomeIcon icon={faLinkedin} color="#FFF" />
-                </a>
-                <a href="" className="github">
-                  <FontAwesomeIcon icon={faGithub} color="#FFF" />
-                </a>
-                <a href="" className="instagram">
-                  <FontAwesomeIcon icon={faInstagram} color="#FFF" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Lpfooter />
       </div>
     </>
   );

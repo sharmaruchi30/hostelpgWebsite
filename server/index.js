@@ -15,8 +15,9 @@ import houseRoutes from "./routes/House.js";
 import userRoutes from "./routes/users.js";
 import { verifyToken } from "./middleware/auth.js";
 import { addHouse } from "./controllers/House.js";
-// CONFIGURATIONS
 
+
+// CONFIGURATIONS
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();

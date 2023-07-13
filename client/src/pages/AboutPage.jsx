@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import React from "react";
 import "../styles/aboutPage.css";
 import APimg from "../assets/aboutus.jpg";
+import Lpfooter from "../components/Lpfooter";
 
 function AboutPage() {
   return (
@@ -49,6 +50,8 @@ function AboutPage() {
             </div>
           </section>
         </div>
+        <div className="emptySpace"></div>
+        <Lpfooter />
       </div>
     </>
   );
