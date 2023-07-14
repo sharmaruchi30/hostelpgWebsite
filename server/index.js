@@ -64,8 +64,10 @@ app.use("/user", userRoutes);
 app.use("/house" , houseRoutes);
 
 // MONGOOSE SETUP
-const PORT = process.env.PORT || 6001
-mongoose.connect(process.env.MONGO_URL , {
+MONGO_URL = 'mongodb+srv://collegeProject:collegeproject123@cluster0.mibtw0k.mongodb.net/?retryWrites=true&w=majority'
+PORT = 3001
+const PORT = PORT || 6001
+mongoose.connect(MONGO_URL , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
