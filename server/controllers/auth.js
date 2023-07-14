@@ -38,6 +38,7 @@ export const register  = async (req , res) => {
 
 export const login = async (req, res) => {
     try{
+        JWT_SECRET='somesuperhardstringtoguess'
         const { email , password } = req.body;
         // res.status(400).json({msg : req.body.email + " body :" + email});
         const user = await User.findOne({ email : email });
@@ -47,7 +48,7 @@ export const login = async (req, res) => {
         if(!isMatch) return res.status(401).json({ msg: "Invalid Password" });
         
         
-        const token = jwt.sign({ id: user.id } , process.env.JWT_SECRET);
+        const token = jwt.sign({ id: user.id } , JWT_SECRET);
         delete user.password;
         res.status(200).json({ token, user });
     }
